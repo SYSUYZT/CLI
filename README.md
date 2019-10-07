@@ -8,6 +8,8 @@
 
 使用 golang 开发 [开发 Linux 命令行实用程序](https://www.ibm.com/developerworks/cn/linux/shell/clutil/index.html) 中的 **selpg**
 
+**！！！！ 插入图片好像有错，请TA看一下pdf版报告，麻烦ta了！！！！！！**
+
 提示：
 
 1. 请按文档 **使用 selpg** 章节要求测试你的程序
