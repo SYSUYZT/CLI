@@ -98,8 +98,11 @@ func main(){
 	                pageCounter++
 	                lineCounter = 1
 	            }
-	            if (pageCounter < sa.start_page) || (pageCounter > sa.end_page) {
-					break
+	            if (pageCounter < sa.start_page) {
+					continue;
+				}
+				if (pageCounter > sa.end_page){
+					break;
 				}
 				if err!=nil{
 					break
@@ -113,9 +116,12 @@ func main(){
 		for true{
 			mybuf, err = buf.ReadString('\f')
             pageCounter++
-            if (pageCounter < sa.start_page) || (pageCounter > sa.end_page) {
-					break
-				}
+            if (pageCounter < sa.start_page) {
+				continue;
+			}
+			if (pageCounter > sa.end_page){
+				break;
+			}
 			if err!=nil{	
 				break
 			}
